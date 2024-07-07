@@ -5,7 +5,6 @@ async function randTitle() {
                 }
                 const dd = await response.json();
                 document.getElementById('title').innerText = dd.data.title;
-                document.getElementById('url').href = dd.data.url;
                 document.getElementById('discription').innerText = dd.data.synopsis;
                 document.getElementById('type').innerText = dd.data.type;
                 document.getElementById('episodes').innerText = dd.data.episodes;
@@ -14,4 +13,10 @@ async function randTitle() {
                 console.log(dd.data.title)
                     const posterUrl = dd.data.images.jpg.large_image_url;
                     document.getElementById('poster').src = posterUrl;
+
+                    const AnimeUrl = dd.data.url;
+                    document.getElementById('url').href = AnimeUrl;
+
+                    const AnimeUrl1 = dd.data.url;
+                    document.getElementById('url1').href = AnimeUrl1;
         }
