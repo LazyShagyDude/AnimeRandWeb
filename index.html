@@ -11,7 +11,8 @@
 </head>
 <body>
     <header>
-        <button class="button" onclick="randTitle()">Random Anime</button>
+        <button id="randomButton" class="button" onclick="randTitle()">Random Anime</button>
+      <input type="number" class="select" id="yearSelect" placeholder="Тут можно ввести год" onchange="randTitle()">
       </header>
       <div class="block">
         <div class="block1"> <a href="" id="url" target="_blank"><img id="poster" src="" alt="Постер"></div></a>
@@ -22,6 +23,7 @@
         <div class="text2"><p>Episodes: <p id="episodes"> </p></p></div>
         <div class="text3"><p>Status: <p id="status"> </p></p></div>
         <div class="text4"><p>Score: <p id="score"> </p></p></div>
+        <div class="text5"><p>Year: <p id="year"> </p></p></div>
       </div>
 </div>
     
